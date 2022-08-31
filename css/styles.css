@@ -1,12 +1,18 @@
-html {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 .container {
-    width: 1230px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-right: auto;
-        margin-left: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
 :root {
 --primary-text-color: #212121; 
@@ -41,6 +47,7 @@ body {
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;  
+    margin-right: 93px;
 }
 .Web {
     color: var(--accent-color);
@@ -51,11 +58,10 @@ body {
 
 }
 
-.contact-link {
-margin-right: 50px;
+.header-list .list-item:not(:last-child) {
+    margin-right: 50px;
 }
 .site-nav {
-    margin-left: 93px;
     display: flex;
 }
 ul {
@@ -66,15 +72,7 @@ ul {
 border-bottom: 1px solid #ECECEC;
 }
 /* Site nav */
-.header-container {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
+
 .site-nav .nav-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -131,7 +129,8 @@ border-bottom: 1px solid #ECECEC;
 }
 /* Герой */
 .main {
-    
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-color: #2F303A;
 }
@@ -143,16 +142,28 @@ border-bottom: 1px solid #ECECEC;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
-    letter-spacing: 0.06em;   
+    letter-spacing: 0.06em;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;    
 }
 .btn {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
     color: var(--white-color);
     background-color: var(--accent-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-    letter-spacing: 0.06em;   
+    letter-spacing: 0.06em;
+    
+       
 }
 /* Описание */
 .benefits-list {
@@ -166,6 +177,7 @@ border-bottom: 1px solid #ECECEC;
     line-height:calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .text {
     color: var(--title-text-color);
@@ -179,6 +191,10 @@ border-bottom: 1px solid #ECECEC;
 .benefits-list .list-item:not(:last-child) {
     margin-right: 30px;
 }
+.benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* Чим мы займаємося */
 .sectiont-title {
     text-align: center;
@@ -186,10 +202,11 @@ border-bottom: 1px solid #ECECEC;
     font-size: 36px;
     line-height:calc(42 / 36);
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.section .list {
-    display: flex;
-}
+
 
 .list .list-item:not(:last-child) {
     margin-right: 30px;
@@ -209,8 +226,18 @@ border-bottom: 1px solid #ECECEC;
     line-height:calc(19 / 16);
     letter-spacing: 0.03em;
 }
+.card-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* .container > .list > .list-item {
+    padding-top: 94px;
+    padding-bottom: 94px;
+} */
 /* Подвал */ 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #2F303A;
 }
 .footer-logo {
@@ -221,6 +248,7 @@ border-bottom: 1px solid #ECECEC;
     font-weight: 700;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
 }
 .link-address {
     font-style: normal;
@@ -250,9 +278,11 @@ border-bottom: 1px solid #ECECEC;
 .main-title {
     color: var(--white-color);
     font-weight: 900;
+    font-size: 44px;
     line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
 }
 .list-main {
     color: var(--primary-text-color);
@@ -266,7 +296,6 @@ border-bottom: 1px solid #ECECEC;
     
 }
 .projects {
-    
     margin-right: 30px;
     margin-bottom: 30px;
     display: flex;
@@ -308,6 +337,15 @@ border-bottom: 1px solid #ECECEC;
 .list {
     display: flex;
     flex-wrap: wrap;
+}
+.project-div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-right: 30px;
+    border-bottom: 30px;
+    border-left: 30px;
 }
 /* Основной цвет #212121 */
 /* Вторичный цвет #757575 */

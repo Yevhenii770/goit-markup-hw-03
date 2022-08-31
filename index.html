@@ -14,12 +14,12 @@
   </head>
   <body>
     <!--Шапка-->
-    <header class="header-container">
+    <header class="header">
+      <div class="container">
       <a class="logo" href="index.html"><span class="Web">Web</span>Studio</a>
       <nav class="nav">
-        <div class="">
         <ul class="site-nav list">
-          <li class="nav-item"><a class="link current" href="">Студія</a></li>
+          <li class="nav-item"><a class="link current" href="./index.html">Студія</a></li>
           <li class="nav-item">
             <a class="link" href="./portfolio.html">Портфоліо</a>
           </li>
@@ -40,13 +40,16 @@
     </header>
     <main>
       <!--Герой-->
-      <section class="main container">
-        <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="btn" type="button" value="">Замовити послугу</button>
+      <section class="main">
+        <div class="container">
+          <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="btn" type="button" value="">Замовити послугу</button>
+      </div>
       </section>
       <!--Описание-->
-      <section class="benefits container">
-        <h2 hidden>Переваги</h2>
+      <section class="benefits">
+        <div class="container ">
+          <h2 hidden>Наші особливості</h2>
         <ul class="benefits-list ">
           <li class="list-item">
             <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -76,10 +79,12 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!-- Чим ми займаємося -->
-      <section class="section container">
-        <h2 class="sectiont-title">Чим ми займаємося</h2>
+      <section class="section">
+        <div class="container">
+          <h2 class="sectiont-title">Чим ми займаємося</h2>
         <ul class="list ">
           <li class="list-item">
             <img
@@ -109,10 +114,12 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <!--Наша команда-->
-      <section class="section container ">
-        <h2 class="sectiont-title">Наша команда</h2>
+      <section class="section">
+        <div class="container">
+          <h2 class="sectiont-title">Наша команда</h2>
         <ul class="list">
           <li class="list-item">
             <a href=""></a
@@ -123,8 +130,10 @@
               width="270"
               height="260"
             />
+            <div class="card-name">
             <h3 class="name-team">Ігор Дем'яненко</h3>
             <p class="team-position" lang="en">Product Designer</p>
+            </div>
           </li>
           <li class="list-item">
             <a href=""></a
@@ -135,20 +144,25 @@
               width="270"
               height="260"
             />
+
+            <div class="card-name">
             <h3 class="name-team">Ольга Рєпіна</h3>
             <p class="team-position" lang="en">Frontend Developer</p>
+            </div>
           </li>
           <li class="list-item">
             <a href=""></a>
             <img
-              class="team-card"
+              class="card-name"
               src="./images/img(2).jpg"
               alt="Team card"
               width="270"
               height="260"
             />
-            <h3 class="name-team">Микола Тарасов</h3>
+            <div class="card-name">
+              <h3 class="name-team">Микола Тарасов</h3>
             <p class="team-position" lang="en">Marketing</p>
+            </div>
           </li>
           <li class="list-item">
             <a href=""></a
@@ -159,15 +173,19 @@
               width="270"
               height="260"
             />
-            <h3 class="name-team">Михайло Єрмаков</h3>
+            <div class="team-card">
+              <h3 class="name-team">Михайло Єрмаков</h3>
             <p class="team-position" lang="en">UI Designer</p>
+            </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!--Подвал-->
-    <footer class="footer container">
-      <a class="footer-logo" href="index.html"
+    <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href="index.html"
         ><span class="Web">Web</span>Studio</a
       ><ul class="list">
           <address class="contacts-adress">
@@ -192,6 +210,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>

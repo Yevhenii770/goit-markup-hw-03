@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Шапка -->
-    <header class="header-container border">
+    <!--Шапка -->
+    <header class="header border">
+      <div class="container">
       <a class="logo" href="index.html"><span class="Web">Web</span>Studio</a>
       <nav class="nav">
-        <div class="">
         <ul class="site-nav list">
           <li class="nav-item"><a class="link" href="./index.html">Студія</a></li>
           <li class="nav-item">
@@ -40,7 +40,8 @@
     </header>
     <main>
 
-      <section class="container">
+      <section class="section">
+        <div class="container">
         <h1 hidden>Наші роботи</h1>
         <ul class="list work">
           <li class="item"><button class="btn-portfolio" type="button">Усі</button></li>
@@ -49,6 +50,8 @@
           <li class="item"><button class="btn-portfolio" type="button">Дизайн</button></li>
           <li class="item"><button class="btn-portfolio" type="button">Маркетинг</button></li>
         </ul>
+        </div>
+        <div class="container">
         <ul class="list">
           <li class="list-item projects">
             <a class="link-work" href=""><img
@@ -57,8 +60,11 @@
               width="370"
               height="294"
             />
-            <h2 class="list-main">Технокряк</h2>
-            <p class="name-project">Веб-сайт</p></a>
+            <div class="project-div">
+              <h2 class="list-main">Технокряк</h2>
+            <p class="name-project">Веб-сайт</p>
+          </div>
+            </a>
           </li>
 
           <li class="list-item projects">
@@ -153,15 +159,17 @@
               height="294"
             />
             <h2 class="list-main">Growing Business</h2>
-            <p class="name-project">Додаток</p></a>
-            
+            <p class="name-project">Додаток</p>
+          </a>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!--Подвал-->
-    <footer class="footer container">
-      <a class="footer-logo" href="index.html"
+     <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href="index.html"
         ><span class="Web">Web</span>Studio</a
       ><ul class="list">
           <address class="contacts-adress">
@@ -186,6 +194,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
