@@ -19,8 +19,10 @@
 --title-text-color: #757575;
 --accent-color: #2196F3;
 --white-color: #FFFFFF;
+--bgc-teams:#f5f4fa;
 --main-fonts: Roboto, sans-serif;
 --secondary-font: Raleway, sans-serif;
+
 }
 
  h1,
@@ -215,6 +217,12 @@ border-bottom: 1px solid #ECECEC;
     text-align: center;
 }
 /* Наша команда */
+.our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--bgc-teams);
+}
+
 .name-team {
     font-weight: 500;
     font-size: 16px;
@@ -230,10 +238,6 @@ border-bottom: 1px solid #ECECEC;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-/* .container > .list > .list-item {
-    padding-top: 94px;
-    padding-bottom: 94px;
-} */
 /* Подвал */ 
 .footer {
     padding-top: 60px;
