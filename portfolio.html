@@ -14,8 +14,8 @@
   </head>
   <body>
     <!--Шапка -->
-    <header class="header border">
-      <div class="container">
+    <header class="header">
+      <div class="container header-container">
       <a class="logo" href="index.html"><span class="Web">Web</span>Studio</a>
       <nav class="nav">
         <ul class="site-nav list">
@@ -39,8 +39,7 @@
       </div>
     </header>
     <main>
-
-      <section class="section">
+      <section class="section-portfolio">
         <div class="container">
         <h1 hidden>Наші роботи</h1>
         <ul class="list work">
@@ -50,9 +49,7 @@
           <li class="item"><button class="btn-portfolio" type="button">Дизайн</button></li>
           <li class="item"><button class="btn-portfolio" type="button">Маркетинг</button></li>
         </ul>
-        </div>
-        <div class="container">
-        <ul class="list">
+        <ul class="list examples">
           <li class="list-item projects">
             <a class="link-work" href=""><img
               src="./images/portfolio/img-1.jpg"
@@ -74,8 +71,10 @@
               width="370"
               height="294"
             />
+            <div class="project-div">
             <h2 class="list-main">Постер New Orlean vs Golden Star</h2>
-            <p class="name-project">Дизайн</p></a>
+            <p class="name-project">Дизайн</p>
+          </div></a>
             
           </li>
 
@@ -86,8 +85,11 @@
               width="370"
               height="294"
             />
+            <div class="project-div">
             <h2 class="list-main">Ресторан Seafood</h2>
-            <p class="name-project">Додаток</p></a>
+            <p class="name-project">Додаток</p>
+          </div>
+        </a>
             
           </li>
 
@@ -98,8 +100,11 @@
               width="370"
               height="294"
             />
+            <div class="project-div">
             <h2 class="list-main">Проєкт Prime</h2>
-            <p class="name-project">Маркетинг</p></a>
+            <p class="name-project">Маркетинг</p>
+          </div>
+        </a>
             
           </li>
 
@@ -110,8 +115,11 @@
               width="370"
               height="294"
             />
+            <div class="project-div">
             <h2 class="list-main">Проєкт Boxes</h2>
-            <p class="name-project">Додаток</p></a>
+            <p class="name-project">Додаток</p>
+          </div>
+        </a>
             
           </li>
 
@@ -122,8 +130,11 @@
               width="370"
               height="294"
             />
+            <div class="project-div">
             <h2 class="list-main" lang="en">Inspiration has no Borders</h2>
-            <p class="name-project">Веб-сайт</p></a>
+            <p class="name-project">Веб-сайт</p>
+          </div>
+        </a>
             
           </li>
 
@@ -134,8 +145,11 @@
               width="370"
               height="294"
             />
+            <div class="project-div">
             <h2 class="list-main">Видання Limited Edition</h2>
-            <p class="name-project">Дизайн</p></a>
+            <p class="name-project">Дизайн</p>
+          </div>
+        </a>
             
           </li>
 
@@ -146,9 +160,11 @@
               width="370"
               height="294"
             />
+            <div class="project-div">
             <h2 class="list-main">Проєкт LAB</h2>
-            <p class="name-project">Маркетинг</p></a>
-            
+            <p class="name-project">Маркетинг</p>
+          </div>
+        </a>
           </li>
 
           <li class="list-item projects">
@@ -158,8 +174,11 @@
               width="370"
               height="294"
             />
+            <div class="project-div">
             <h2 class="list-main">Growing Business</h2>
             <p class="name-project">Додаток</p>
+            </div>
+
           </a>
           </li>
         </ul>
@@ -167,13 +186,13 @@
       </section>
     </main>
     <!--Подвал-->
-     <footer class="footer">
-      <div class="container">
-        <a class="footer-logo" href="index.html"
-        ><span class="Web">Web</span>Studio</a
-      ><ul class="list">
-          <address class="contacts-adress">
-          <li>
+    <footer class="footer">
+      <div class="container footer-container">
+        <a class="footer-logo" href="./index.html"
+        ><span class="Web">Web</span>Studio</a>
+        <address class="contacts-adress">
+      <ul class="footer-contacts list">
+          <li class="footer-item">
         <a
           class="link-address"
           href="https://goo.gl/maps/wAU2gf5ufKn13dxh9"
@@ -182,12 +201,12 @@
         >
           м. Київ, пр-т Лесі Українки, 26</a
         ></li>
-          <li>
+          <li class="footer-item">
             <a class="list-footer" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="footer-item">
             <a class="list-footer" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >

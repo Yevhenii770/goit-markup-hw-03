@@ -9,9 +9,6 @@
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     
 }
 :root {
@@ -41,6 +38,17 @@ body {
 }
 
 /* Шапка */
+.header {
+    border: 1px solid #ECECEC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.header-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
 .logo {
     font-family: var(--secondary-font);
     color:var(--primary-text-lcolor);
@@ -198,6 +206,9 @@ border-bottom: 1px solid #ECECEC;
     padding-bottom: 94px;
 }
 /* Чим мы займаємося */
+.section {
+    padding-bottom: 94px;
+}
 .sectiont-title {
     text-align: center;
     font-weight: 700;
@@ -210,7 +221,7 @@ border-bottom: 1px solid #ECECEC;
 }
 
 
-.list .list-item:not(:last-child) {
+.section .container .list .list-item:not(:last-child) {
     margin-right: 30px;
 }
 .section .list .list-item {
@@ -221,6 +232,7 @@ border-bottom: 1px solid #ECECEC;
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--bgc-teams);
+    gap: 30px;
 }
 .our-team .list-item {
     background: #FFFFFF;
@@ -231,6 +243,7 @@ border-bottom: 1px solid #ECECEC;
     font-size: 16px;
     line-height:calc(19 / 16);
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 .team-position {
     color: var(--title-text-color);
@@ -242,6 +255,10 @@ border-bottom: 1px solid #ECECEC;
     padding-bottom: 30px;
 }
 /* Подвал */ 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -274,6 +291,20 @@ border-bottom: 1px solid #ECECEC;
 }
 .contacts-adress {
     font-style: normal;
+    display: flex;
+}
+.footer-contacts{
+    flex-direction: column;
+}
+.footer-contacts>.link-address:not(:last-child) {
+    margin-bottom: 10px;
+    
+}
+
+/* ВТОРАЯ СТРАНИЦА */
+.section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 /* Наші роботи */
 .btn-portfolio:focus,
@@ -281,7 +312,9 @@ border-bottom: 1px solid #ECECEC;
     background-color: var(--accent-color);
     color: var(--white-color);
 }
-
+.examples {
+    gap: 30px;
+}
 .main-title {
     color: var(--white-color);
     font-weight: 900;
@@ -303,10 +336,7 @@ border-bottom: 1px solid #ECECEC;
     
 }
 .projects {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    width: 380px;
+    width: 370px;
     
 }
 .name-project {
@@ -321,16 +351,19 @@ border-bottom: 1px solid #ECECEC;
     line-height: calc(26 / 16);
     letter-spacing: 0.03em;
     border-radius: 4px;
-    margin-left: 8px;
 }
-.btn-portfolio:not(:last-child) {
-    margin-right: 8px;
+
+.footer-item:not(:last-child) {
+margin-bottom: 9px;
 }
 /* Наши роботы */
 
 .work {
     justify-content: center;
     display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 34px;
 }
 
 .list .projects:nth-child(3n) {
