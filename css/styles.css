@@ -1,3 +1,6 @@
+html {
+    box-sizing: border-box;
+}
 *,
 *::before,
 *::after {
@@ -9,6 +12,7 @@
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
+    
     
 }
 :root {
@@ -35,6 +39,7 @@ body {
     background-color: #FFFFFF;
     color: var(--primary-text-color);
     font-family: var(--main-fonts)
+    
 }
 
 /* Шапка */
@@ -220,7 +225,6 @@ border-bottom: 1px solid #ECECEC;
     margin-right: auto;
 }
 
-
 .section .container .list .list-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -233,6 +237,7 @@ border-bottom: 1px solid #ECECEC;
     padding-bottom: 94px;
     background-color: var(--bgc-teams);
     gap: 30px;
+    
 }
 .our-team .list-item {
     background: #FFFFFF;
